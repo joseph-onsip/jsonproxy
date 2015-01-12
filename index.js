@@ -1,5 +1,9 @@
 "use strict";
 
+// add polyfills for non-browser usage
+global.XMLHttpRequest = global.XMLHttpRequest || require('xmlhttprequest').XMLHttpRequest;
+global.Promise = global.Promise || require('native-promise-only');
+
 var denodeify = require('denodeify');
 var xhr = require('xhr');
 var xhrPromise = denodeify(xhr);

@@ -1,9 +1,5 @@
 "use strict";
 
-// add polyfills to simulate browser environment
-global.XMLHttpRequest = global.XMLHttpRequest || require('xmlhttprequest').XMLHttpRequest;
-global.Promise = global.Promise || require('native-promise-only');
-
 var test = require('tape');
 var jsonproxy = require('../');
 
