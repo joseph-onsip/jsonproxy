@@ -11,5 +11,10 @@
   "dependencies": {
     "denodeify": "^1.2.0",
     "xhr": "^2.0.0"
+  },
+  "devDependencies": {
+    "native-promise-only": "^0.7.6-a",
+    "tape": "^3.0.3",
+    "xmlhttprequest": "^1.7.0"
   }
 }
